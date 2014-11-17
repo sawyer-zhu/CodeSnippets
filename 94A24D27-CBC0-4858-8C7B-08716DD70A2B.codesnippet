@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>object</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// a new object
+class &lt;#className#&gt; : public Object {
+public:
+    // all object have a default creator
+    static strong&lt;&lt;#className#&gt;&gt; create()
+    {
+        auto instance = MY_INSTANCE(&lt;#className#&gt;);
+        if (instance-&gt;init()) return instance;
+        return nullptr;
+    }
+protected:
+    // designed initializer
+    virtual Bool init()
+    {
+        return true;
+    }
+    // designed deinitializer
+    virtual void deinit()
+    {
+        
+    }
+};
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>94A24D27-CBC0-4858-8C7B-08716DD70A2B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>subclass of object</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>new object</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

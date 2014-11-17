@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>decorator</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// a new decorator
+class &lt;#targetClassName#&gt;DecoratorFor&lt;#extension#&gt; : public Object {
+protected:
+    // designed ctor
+    &lt;#className#&gt;(strong&lt;&lt;#targetClassName#&gt;&gt; source){};
+    // designed dtor
+    virtual ~&lt;#className#&gt;(){};
+public:
+    // all object have a default creator
+    static strong&lt;&lt;#className#&gt;&gt; create(strong&lt;&lt;#targetClassName#&gt;&gt; source) {
+        return strong&lt;&lt;#className#&gt;&gt;(new &lt;#className#&gt;(source), MY_DELETER(&lt;#className#&gt;));
+    }
+    MY_IMFORMATION_STRONG_READONLY(&lt;#targetClassName#&gt;, Source)
+};
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6D077602-CC26-414E-8F77-F8D66856B422</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>extension of object</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>new decorator</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
