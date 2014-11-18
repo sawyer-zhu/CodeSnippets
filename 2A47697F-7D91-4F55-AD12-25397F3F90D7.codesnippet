@@ -3,14 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>implementation</string>
+	<string>impl</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>struct &lt;#className#&gt;::implementation {
-    virtual ~implementation(){};
+	<string>struct &lt;#className#&gt;::impl {
     &lt;#privates...#&gt;
 };
 </string>
@@ -19,7 +18,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>implementation</string>
+	<string>impl struct</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
