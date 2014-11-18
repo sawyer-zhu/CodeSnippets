@@ -10,18 +10,24 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>// a new decorator
-class &lt;#targetClassName#&gt;DecoratorFor&lt;#extension#&gt; : public Object {
-protected:
-    // designed ctor
-    &lt;#className#&gt;(strong&lt;&lt;#targetClassName#&gt;&gt; source){};
-    // designed dtor
-    virtual ~&lt;#className#&gt;(){};
+class &lt;#classSource#&gt;Ex&lt;#extension#&gt; : public Object {
 public:
     // all object have a default creator
-    static strong&lt;&lt;#className#&gt;&gt; create(strong&lt;&lt;#targetClassName#&gt;&gt; source) {
-        return strong&lt;&lt;#className#&gt;&gt;(new &lt;#className#&gt;(source), MY_DELETER(&lt;#className#&gt;));
+    static strong&lt;&lt;#class#&gt;&gt; create(strong&lt;&lt;#classSource#&gt;&gt; source) {
+        auto instance = MY_INSTANCE(&lt;#class#&gt;);
+        if (instance-&gt;init(source)) return instance;
+        return nullptr;
     }
-    MY_IMFORMATION_STRONG_READONLY(&lt;#targetClassName#&gt;, Source)
+    MY_IMFORMATION_STRONG(&lt;#classSource#&gt;, Source)
+    
+    &lt;#operations...#&gt;
+protected:
+    // designed initializer
+    virtual Bool init(strong&lt;&lt;#classSource#&gt;&gt; source)
+    {
+        _mSource = source;
+        return true;
+    }
 };
 </string>
 	<key>IDECodeSnippetIdentifier</key>
