@@ -18,7 +18,7 @@ public:
         if (instance-&gt;init(source)) return instance;
         return nullptr;
     }
-    MY_IMFORMATION_STRONG(&lt;#classSource#&gt;, Source)
+    MY_INFORMATION_STRONG(&lt;#classSource#&gt;, Source)
     
     &lt;#operations...#&gt;
 protected:
