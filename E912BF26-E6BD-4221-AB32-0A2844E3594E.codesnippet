@@ -9,15 +9,17 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>inline bool service_&lt;#name#&gt;(const &lt;#request_type#&gt;&amp; request, &lt;#response_type#&gt;&amp; response, const std::string&amp; uuid, std::string&amp; domain, int&amp; code)
+	<string>inline void service_&lt;#name#&gt;(const &lt;#request_type#&gt;&amp; request, &lt;#response_type#&gt;&amp; response, const ServiceHandler&amp; handler)
 {
-    return false;
+    
 }
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E912BF26-E6BD-4221-AB32-0A2844E3594E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>service function</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>new service</string>
 	<key>IDECodeSnippetUserSnippet</key>
